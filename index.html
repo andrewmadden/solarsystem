@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./style.css">
+    
     <title>Solar System Model</title>
 </head>
 <body>
-    
+    <section id="controls-wrapper">
+        <label for="">Mass of Added Planet</label>
+        <select name="" id="bodies-list">
+            <option value="0.000003003">Earth</option>
+            <option value="0.0009543">Jupiter</option>
+            <option value="1">Sun</option>
+            <option value="0.1">Red Dwarf</option>
+        </select>
+        <button id="clear-bodies">Reset</button>
+    </section>
+
+    <canvas id="canvas"></canvas>
+
     <!-- calculate physics of celestial bodies -->
     <script src="./physics.js"></script>
+    <!-- draw bodies with trails on canvas -->
+    <script src="./drawBody.js"></script>
+    <!-- main script -->
+    <script src="./main.js"></script>
 </body>
 </html>
